@@ -36,14 +36,14 @@ section > div {
     place-items: center;
     border: solid 1px;
     /* height: aut; */
-    min-height: calc(25vh - 2px);
+    min-height: calc((100vh - 8px) / 4);
 }
 
 section > div:nth-child(8) {
-    height: calc(100vh / 3 - 2px);
+    height: calc((100vh - 8px) / 3);
 }
 
 section > div:nth-child(10) {
     min-height: auto;
-    height: calc(100vh / 6 - 2px);
+    height: calc((100vh - 8px) / 6);
 }
