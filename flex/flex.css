@@ -31,6 +31,7 @@ section > div:not(section div:last-of-type) {
     display: flex;
     flex-direction: column;
     width: calc(4 / 7 * 100%);
+    height: 100%;
 }
 
 /* section left rows */
@@ -39,9 +40,13 @@ section > div:first-child > *{
     display: flex;
 }
 
-/* section > div:first-child div:not(div div div):not(:nth-child(3n)) {
-    height: 20%;
-} */
+section > div:first-child div:not(div div div):nth-child(2n + 1):not(:nth-child(1)) {
+    height: calc(100% / 3 - 2 * var(--margin));
+}
+
+section > div:first-child div:not(div div div):nth-child(4) {
+    height: calc(50% / 3);
+}
 
 /* 1, 2, 7 */
 section > div:first-child > *:nth-child(1) > div, 
